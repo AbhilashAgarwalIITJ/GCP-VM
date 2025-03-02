@@ -16,23 +16,23 @@ The repository contains:
 ## Repository Structure
 
 ```
-assignment-2-gcp/
+GCP-VM/
 ├── README.md                  # This file (complete documentation)
-├── report.pdf                 # Detailed project report (design, implementation, testing)
-├── scripts/
+├── M23CSA502_VCC_Ass2.pdf      # Detailed project report (design, implementation, testing)
+├
 │   ├── create_vm.sh             # Create a single VM instance with Apache installed
 │   ├── create_instance_template.sh  # Create an instance template for auto-scaling
 │   ├── create_mig.sh            # Create a Managed Instance Group (MIG) with auto-scaling
 │   ├── setup_firewall.sh        # Configure custom firewall rules
 │   ├── setup_iam.sh             # Set up IAM roles for restricted access
 │   └── stress_test.sh           # Simulate CPU load for testing auto-scaling
-├── testing/
+├
 │   ├── nmap_test.sh             # Test port access using nmap
 │   └── curl_test.sh             # Test HTTP response using curl
-├── config/
+├
 │   ├── firewall-rules.yaml      # Deployment Manager config for custom firewall rules
 │   └── iam-role.yaml            # Deployment Manager config for IAM policy bindings
-└── terraform/                   # Optional Terraform configuration
+└──                              # Optional Terraform configuration
     ├── main.tf
     ├── variables.tf
     └── outputs.tf
