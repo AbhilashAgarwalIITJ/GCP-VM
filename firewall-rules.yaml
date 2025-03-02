@@ -1,0 +1,26 @@
+resources:
+- name: allow-http-custom
+  type: compute.v1.firewall
+  properties:
+    description: "Allow HTTP traffic from allowed IP range"
+    network: global/networks/default
+    priority: 1000
+    sourceRanges:
+      - 223.238.204.234/32
+    allowed:
+      - IPProtocol: tcp
+        ports:
+          - "80"
+
+- name: allow-https-custom
+  type: compute.v1.firewall
+  properties:
+    description: "Allow HTTPS traffic from allowed IP range"
+    network: global/networks/default
+    priority: 1000
+    sourceRanges:
+      - 223.238.204.234/32
+    allowed:
+      - IPProtocol: tcp
+        ports:
+          - "443"

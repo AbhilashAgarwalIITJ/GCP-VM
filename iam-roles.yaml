@@ -1,0 +1,7 @@
+resources:
+- name: add-iam-policy-binding
+  type: gcp-types/cloudresourcemanager-v1:virtual.projects.iamMemberBinding
+  properties:
+    resource: projects/your-project-id
+    role: roles/compute.viewer
+    member: user:user@example.com
